@@ -584,6 +584,11 @@ body::-webkit-scrollbar-thumb {
   flex-grow: 0;
 }
 
+#certificados .repo-link {
+  justify-content: center;
+  width: 100%;
+}
+
 
 /* Responsividade */
 
@@ -608,18 +613,23 @@ body::-webkit-scrollbar-thumb {
   }
 
   /* Esconde colunas laterais no tablet/mobile */
-  .tech-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    /* distribui os badges verticalmente */
-    height: 100%;
-    /* ocupa toda altura do wrapper */
-  }
+  @media (max-width: 992px) {
 
-  .about-wrapper {
-    flex-direction: column;
+    .tech-column {
+      display: grid;
+      /* 🔥 muda de flex pra grid */
+      grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+      gap: 15px;
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto 0 auto;
+    }
+
+    .about-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
 }
 
