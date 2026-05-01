@@ -15,7 +15,7 @@ Reúne projetos acadêmicos e pessoais com foco em desenvolvimento full-stack, c
 
 ## 🛠️ Tecnologias
 
-- HTML, CSS, JavaScript  
+- HTML, CSS, JavaScript, TypeScript  
 - React, Node.js, Express  
 - PostgreSQL, MySQL  
 - Docker, Prisma  
