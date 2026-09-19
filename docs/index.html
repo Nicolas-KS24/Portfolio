@@ -136,9 +136,14 @@
         <section id="projetos" class="portfolio-panel">
             <h2>Meus Projetos</h2>
 
-            <h3 class="project-category-title">Acadêmicos:</h3>
+            <h3 class="project-category-title">
+                <button type="button" class="category-toggle-btn" aria-expanded="true" aria-controls="academic-projects" aria-label="Minimizar ou expandir projetos acadêmicos">
+                    <span>Acadêmicos:</span>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </button>
+            </h3>
 
-            <div class="project-list-container">
+            <div id="academic-projects" class="project-list-container collapsible-content">
                 <div class="project-card">
                     <div class="project-preview">
                         <img src="assets/images/horarios_fatec.png" alt="horarios fatec">
@@ -306,9 +311,14 @@
 
             </div>
 
-            <h3 class="project-category-title">Pessoais:</h3>
+            <h3 class="project-category-title">
+                <button type="button" class="category-toggle-btn" aria-expanded="true" aria-controls="personal-projects" aria-label="Minimizar ou expandir projetos pessoais">
+                    <span>Pessoais:</span>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </button>
+            </h3>
 
-            <div class="project-list-container">
+            <div id="personal-projects" class="project-list-container collapsible-content">
                 <div class="project-card">
                     <!-- <div class="project-preview">
                         <img src="assets/images/ambra.png" alt="AMBRA">
@@ -338,6 +348,40 @@
                         </p>
                         <div class="repo-link">
                             <a href="https://github.com/Nicolas-KS24/AMBRA" target="_blank">
+                                <i class="fab fa-github"></i> Ver Repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <!-- <div class="project-preview">
+                        <img src="assets/images/neo_mail_bot.png" alt="NEO Mail Bot">
+                    </div> -->
+
+                    <h3>N.E.O. — Mail Bot</h3>
+                    <p class="project-subtitle">
+                        <strong>Personal Email Scanner & Notification System</strong>
+                    </p>
+
+                    <div class="project-meta">
+                        <span class="project-badge">🤖 Automação & Bot</span>
+                        <span class="project-period">2026</span>
+                    </div>
+
+                    <p>
+                        Assistente pessoal de automação desenvolvido em Python para varredura inteligente e notificação de e-mails em tempo real. O sistema conecta-se com segurança à caixa de entrada via protocolo IMAP, realizando leitura otimizada dos cabeçalhos recentes sem consumo excessivo de banda.
+                    </p>
+                    <p>
+                        Entrega resumos e relatórios filtrados diretamente em canais interativos do Telegram (com comandos e botões inline) e notificações nativas para Windows Desktop (System Tray e Toast Notifications).
+                    </p>
+
+                    <div class="card-bottom-content">
+                        <p class="theme-subtitle">
+                            <strong>Tecnologias utilizadas:</strong> Python, IMAP, python-telegram-bot, win11toast, pystray
+                        </p>
+                        <div class="repo-link">
+                            <a href="https://github.com/Nicolas-KS24/NEO_Mail-Bot" target="_blank">
                                 <i class="fab fa-github"></i> Ver Repositório
                             </a>
                         </div>
